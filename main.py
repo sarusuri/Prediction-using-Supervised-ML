@@ -28,3 +28,6 @@ df
 new_input=[[9.25]]
 new_output=regressor.predict(new_input)
 print(new_output)
+
+from sklearn import metrics  
+print('Mean Absolute Error:', metrics.mean_absolute_error(Y_test, y_pred_perc)) 
